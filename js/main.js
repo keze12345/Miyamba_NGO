@@ -1,7 +1,11 @@
 // ===== LOADER =====
-window.addEventListener('load', () => {
-  setTimeout(() => document.getElementById('loader').classList.add('hidden'), 1600);
-});
+const loader = document.getElementById('loader');
+function hideLoader() {
+  if (loader) loader.classList.add('hidden');
+}
+window.addEventListener('load', () => setTimeout(hideLoader, 600));
+document.addEventListener('DOMContentLoaded', () => setTimeout(hideLoader, 1800));
+setTimeout(hideLoader, 3500);
 
 // ===== ANNOUNCE BAR =====
 document.getElementById('closeAnnounce').addEventListener('click', () => {
@@ -111,18 +115,35 @@ document.addEventListener('keydown', e => {
 });
 
 // ===== CONTACT FORM =====
-document.getElementById('cform').addEventListener('submit', e => {
+document.getElementById('cform').addEventListener('submit', async e => {
   e.preventDefault();
-  const btn = e.target.querySelector('.btn-submit');
+  const form = e.target;
+  const btn = form.querySelector('.btn-submit');
   btn.textContent = 'Sending…';
   btn.disabled = true;
-  setTimeout(() => {
+
+  try {
+    const body = new URLSearchParams(new FormData(form)).toString();
+    if (location.protocol !== 'file:') {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body
+      });
+    }
+    document.getElementById('cformSuccess').innerHTML =
+      '<i class="fas fa-circle-check"></i> Thank you! We will respond from wmbu@miyamba.org.';
     document.getElementById('cformSuccess').classList.add('show');
-    e.target.reset();
+    form.reset();
+  } catch (err) {
+    document.getElementById('cformSuccess').innerHTML =
+      '<i class="fas fa-envelope"></i> Please email us directly at wmbu@miyamba.org.';
+    document.getElementById('cformSuccess').classList.add('show');
+  } finally {
     btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
     btn.disabled = false;
     setTimeout(() => document.getElementById('cformSuccess').classList.remove('show'), 6000);
-  }, 1200);
+  }
 });
 
 // ===== SCROLL REVEAL =====

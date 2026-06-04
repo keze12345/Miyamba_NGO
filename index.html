@@ -1,461 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Miyamba | MARELI Academy — Inclusive Education in Cameroon</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miyamba | MARELI Academy — Inclusive Education in Cameroon</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
 
-  <!-- ===== LOADING SCREEN ===== -->
-  <div class="loader" id="loader">
-    <div class="loader-inner">
-      <span class="loader-leaf">🌿</span>
-      <div class="loader-bar"><div class="loader-fill"></div></div>
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <img class="loader-logo" src="images/logo.jpeg" alt="MREC logo" />
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- ===== ANNOUNCEMENT BAR ===== -->
-  <div class="announce-bar">
-    <div class="announce-inner">
-      <span class="announce-dot"></span>
-      <p>School year 2024–2025 now open for enrollment — <a href="#contact">Apply Today</a></p>
-      <button class="announce-close" id="closeAnnounce">×</button>
+    <!-- ===== ANNOUNCEMENT BAR ===== -->
+    <div class="announce-bar">
+        <div class="announce-inner">
+            <span class="announce-dot"></span>
+            <p>Enrollment and partnership inquiries are welcome — <a href="#contact">Contact Us</a></p>
+            <button class="announce-close" id="closeAnnounce">×</button>
+        </div>
     </div>
-  </div>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-wrap">
-      <a href="#home" class="logo">
-        <span class="logo-mark">M</span>
-        <div class="logo-text">
-          <span class="logo-name">Miyamba</span>
-          <span class="logo-tagline">MARELI Academy · Buea, Cameroon</span>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-wrap">
+            <a href="#home" class="logo">
+                <img class="logo-img" src="images/logo.jpeg" alt="Miyamba MREC logo" />
+                <div class="logo-text">
+                    <span class="logo-name">Miyamba</span>
+                    <span class="logo-tagline">MARELI Academy · Buea, Cameroon</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.miyamba.org/donate/" class="nav-cta" target="_blank">Donate <i
+                            class="fas fa-arrow-right"></i></a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-      </a>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#about">Our Story</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://www.miyamba.org/donate/" class="nav-cta" target="_blank">Donate <i class="fas fa-arrow-right"></i></a></li>
-      </ul>
-      <button class="burger" id="burger" aria-label="Toggle menu">
-        <span></span><span></span>
-      </button>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="hero-slide active" style="background-image:url('https://www.miyamba.org/wp-content/uploads/2017/10/class-time-min-1.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('https://www.miyamba.org/wp-content/uploads/2017/10/miyamba-front-1.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('https://www.miyamba.org/wp-content/uploads/2017/10/students1.jpg')"></div>
-    </div>
-    <div class="hero-vignette"></div>
-    <div class="hero-body">
-      <div class="hero-eyebrow">
-        <span class="pulse-dot"></span>
-        Buea, South West Cameroon
-      </div>
-      <h1 class="hero-h1">
-        <em>Every Child</em><br>
-        Deserves a<br>
-        <span class="hero-stroke">Lifelong Difference</span>
-      </h1>
-      <p class="hero-desc">Ss. Mary & Elizabeth Nursery and Primary Academy — delivering inclusive, world-class education to every child, regardless of ability or background.</p>
-      <div class="hero-actions">
-        <a href="#about" class="btn-hero-primary">Discover Our Mission</a>
-        <a href="#impact" class="btn-hero-ghost">
-          <span class="play-ring"><i class="fas fa-play"></i></span>
-          See Our Impact
-        </a>
-      </div>
-      <div class="hero-stats-row">
-        <div class="hs"><strong>600+</strong><span>Students</span></div>
-        <div class="hs-div"></div>
-        <div class="hs"><strong>20</strong><span>Classrooms</span></div>
-        <div class="hs-div"></div>
-        <div class="hs"><strong>2015</strong><span>Since</span></div>
-        <div class="hs-div"></div>
-        <div class="hs"><strong>100%</strong><span>Inclusive</span></div>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-    <div class="hero-slide-controls">
-      <button class="slide-btn" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
-      <div class="slide-dots" id="slideDots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-      <button class="slide-btn" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
-    </div>
-  </section>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-slide active"
+                style="background-image:url('images/miyamba-front-1.jpg')">
+            </div>
+            <div class="hero-slide"
+                style="background-image:url('images/image20.jpeg')">
+            </div>
+            <div class="hero-slide"
+                style="background-image:url('images/class-time-min-1.jpg')"></div>
+        </div>
+        <div class="hero-vignette"></div>
+        <div class="hero-body">
+            <div class="hero-eyebrow">
+                <span class="pulse-dot"></span>
+                Buea, South West Cameroon
+            </div>
+            <h1 class="hero-h1">
+                <em>Every Child</em><br>
+                deserves a Quality Education<br>
+                <span class="hero-stroke">for a Lifelong<br>Difference</span>
+            </h1>
+            <p class="hero-desc">Ss. Mary & Elizabeth Nursery and Primary Academy — delivering inclusive, world-class
+                education to every child, regardless of ability or background.</p>
+            <div class="hero-actions">
+                <a href="#about" class="btn-hero-primary">Discover Our Mission</a>
+                <a href="#impact" class="btn-hero-ghost">
+                    <span class="play-ring"><i class="fas fa-play"></i></span>
+                    See Our Impact
+                </a>
+            </div>
+            <div class="hero-stats-row">
+                <div class="hs"><strong>600+</strong><span>Students</span></div>
+                <div class="hs-div"></div>
+                <div class="hs"><strong>20</strong><span>Classrooms</span></div>
+                <div class="hs-div"></div>
+                <div class="hs"><strong>2015</strong><span>Since</span></div>
+                <div class="hs-div"></div>
+                <div class="hs"><strong>100%</strong><span>Inclusive</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+        <div class="hero-slide-controls">
+            <button class="slide-btn" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slide-dots" id="slideDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="slide-btn" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
 
-  <!-- ===== FEATURED MARQUEE ===== -->
-  <div class="marquee-bar">
-    <div class="marquee-track">
-      <span>Inclusive Education</span><span class="mq-dot">◆</span>
-      <span>Remedial Support</span><span class="mq-dot">◆</span>
-      <span>Qualified Local Teachers</span><span class="mq-dot">◆</span>
-      <span>Modern Facilities</span><span class="mq-dot">◆</span>
-      <span>Community Development</span><span class="mq-dot">◆</span>
-      <span>Volunteer Program</span><span class="mq-dot">◆</span>
-      <span>Inclusive Education</span><span class="mq-dot">◆</span>
-      <span>Remedial Support</span><span class="mq-dot">◆</span>
-      <span>Qualified Local Teachers</span><span class="mq-dot">◆</span>
-      <span>Modern Facilities</span><span class="mq-dot">◆</span>
-      <span>Community Development</span><span class="mq-dot">◆</span>
-      <span>Volunteer Program</span><span class="mq-dot">◆</span>
+    <!-- ===== FEATURED MARQUEE ===== -->
+    <div class="marquee-bar">
+        <div class="marquee-track">
+            <span>Inclusive Education</span><span class="mq-dot">◆</span>
+            <span>Remedial Support</span><span class="mq-dot">◆</span>
+            <span>Qualified Local Teachers</span><span class="mq-dot">◆</span>
+            <span>Modern Facilities</span><span class="mq-dot">◆</span>
+            <span>Community Development</span><span class="mq-dot">◆</span>
+            <span>Volunteer Program</span><span class="mq-dot">◆</span>
+            <span>Inclusive Education</span><span class="mq-dot">◆</span>
+            <span>Remedial Support</span><span class="mq-dot">◆</span>
+            <span>Qualified Local Teachers</span><span class="mq-dot">◆</span>
+            <span>Modern Facilities</span><span class="mq-dot">◆</span>
+            <span>Community Development</span><span class="mq-dot">◆</span>
+            <span>Volunteer Program</span><span class="mq-dot">◆</span>
+        </div>
     </div>
-  </div>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="about-section" id="about">
-    <div class="about-media">
-      <img src="https://www.miyamba.org/wp-content/uploads/2017/10/classroom3.jpg" alt="Classroom"/>
-      <div class="about-media-card">
-        <div class="amc-number">16<sup>+</sup></div>
-        <div class="amc-label">Years of<br>Impact</div>
-      </div>
-    </div>
-    <div class="about-content">
-      <div class="eyebrow-tag">Our Story</div>
-      <h2 class="section-h2">A Dream Born<br><em>in Buea, 2006</em></h2>
-      <div class="about-lead">William and Lorraine Mbu envisioned a school where every child — regardless of disability, background, or circumstance — could access world-class education.</div>
-      <p>Today, that vision stands three stories tall in Buea. Ss. Mary & Elizabeth Academy has become a beacon of inclusive education in Cameroon, with university-trained faculty, modern classrooms, and a community built on the belief that learning is a right, not a privilege.</p>
-      <div class="about-pillars">
-        <div class="pillar">
-          <i class="fas fa-universal-access"></i>
-          <div><strong>100% Inclusive</strong><p>Every student welcomed, including those with special needs</p></div>
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section" id="about">
+        <div class="about-media">
+            <img src="images/classroom3.jpg" alt="Students learning in a MARELI Academy classroom" />
+            <div class="about-media-card">
+                <div class="amc-number">20<sup>+</sup></div>
+                <div class="amc-label">Years of<br>Impact</div>
+            </div>
         </div>
-        <div class="pillar">
-          <i class="fas fa-chalkboard-teacher"></i>
-          <div><strong>Expert Faculty</strong><p>Recruited from the University of Buea, well-trained & well-paid</p></div>
+        <div class="about-content">
+            <div class="eyebrow-tag">Our Story</div>
+            <h2 class="section-h2">A Dream Born<br><em>in Buea, 2006</em></h2>
+            <div class="about-lead">William and Lorraine Mbu envisioned a school where every child — regardless of
+                disability, background, or circumstance — could access world-class education.</div>
+            <p>Today, that vision stands three stories tall in Buea. Ss. Mary & Elizabeth Academy has become a beacon of
+                inclusive education in Cameroon, with university-trained faculty, modern classrooms, and a community
+                built on the belief that learning is a right, not a privilege.</p>
+            <div class="about-pillars">
+                <div class="pillar">
+                    <i class="fas fa-universal-access"></i>
+                    <div><strong>100% Inclusive</strong>
+                        <p>Every student welcomed, including those with special needs</p>
+                    </div>
+                </div>
+                <div class="pillar">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div><strong>Expert Faculty</strong>
+                        <p>Recruited from the University of Buea, well-trained & well-paid</p>
+                    </div>
+                </div>
+                <div class="pillar">
+                    <i class="fas fa-building"></i>
+                    <div><strong>Modern Campus</strong>
+                        <p>3-story building, 20 classrooms, dedicated support spaces</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#programs" class="btn-primary">Explore Our Programs <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="pillar">
-          <i class="fas fa-building"></i>
-          <div><strong>Modern Campus</strong><p>3-story building, 20 classrooms, dedicated support spaces</p></div>
-        </div>
-      </div>
-      <a href="#programs" class="btn-primary">Explore Our Programs <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== MISSION QUOTE ===== -->
-  <section class="mission-section">
-    <div class="mission-inner">
-      <div class="mission-leaf">🌿</div>
-      <blockquote>
-        "Learning Opportunity<br>for a <em>Lifelong Difference</em>"
-      </blockquote>
-      <cite>— Miyamba MREC Official Motto</cite>
-      <div class="mission-divider"></div>
-      <p>We thank all who contribute for supporting inclusive education in Cameroon. Together, we are giving every child the foundation they deserve.</p>
-    </div>
-  </section>
+    <!-- ===== TIMELINE ===== -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="sec-header">
+                <div class="eyebrow-tag">From Vision to Campus</div>
+                <h2 class="section-h2">A School Built<br><em>Step by Step</em></h2>
+                <p class="sec-sub">A dated look at the journey from the first work on site to the active school
+                    community families know today.</p>
+            </div>
+            <div class="timeline">
+                <article class="tl-item tl-left">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-year">February 2006</span>
+                        <div class="tl-img-wrap"><img src="images/image0%20%283%29.jpeg"
+                                alt="Early groundwork at the future school site" /></div>
+                        <h3>The Groundwork Begins</h3>
+                        <p>The first visible work on the Buea site marked the move from a hopeful idea into a real
+                            place where children could one day learn.</p>
+                        <span class="tl-tag">Conception and site work</span>
+                    </div>
+                </article>
+                <article class="tl-item tl-right">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-year">April 2008</span>
+                        <div class="tl-img-wrap two-img">
+                            <img src="images/image2%20%283%29.jpeg" alt="Foundation and construction work in 2008" />
+                            <img src="images/image3%20%282%29.jpeg" alt="Workers preparing the school foundation" />
+                        </div>
+                        <h3>Foundations Take Shape</h3>
+                        <p>Construction advanced through careful foundation work, turning open land into the footprint
+                            of a future academy.</p>
+                        <span class="tl-tag">Building phase</span>
+                    </div>
+                </article>
+                <article class="tl-item tl-left">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-year">2009-2012</span>
+                        <div class="tl-img-wrap two-img">
+                            <img src="images/image4.jpeg" alt="Early classroom block under construction in 2009" />
+                            <img src="images/start_of_second_floor_2012.jpg"
+                                alt="Start of the second floor construction in 2012" />
+                        </div>
+                        <h3>The Campus Rises</h3>
+                        <p>The structure grew floor by floor, with classroom space planned for a school that could
+                            serve more children over time.</p>
+                        <span class="tl-tag">Expansion</span>
+                    </div>
+                </article>
+                <article class="tl-item tl-right">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-year">2014-2015</span>
+                        <div class="tl-img-wrap two-img">
+                            <img src="images/image7%20%281%29.jpeg" alt="Covered courtyard taking shape in 2014" />
+                            <img src="images/red-courtyard-4-2015.jpg"
+                                alt="The completed red courtyard area in 2015" />
+                        </div>
+                        <h3>Ready for Students</h3>
+                        <p>By 2015, the school environment had become a practical, welcoming place for daily learning,
+                            play, and community life.</p>
+                        <span class="tl-tag">Opening era</span>
+                    </div>
+                </article>
+                <article class="tl-item tl-left">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-year">Recent years</span>
+                        <div class="tl-img-wrap"><img src="images/image20.jpeg"
+                                alt="Recent students gathered at MARELI Academy" /></div>
+                        <h3>A Living School Community</h3>
+                        <p>Today, classrooms, assemblies, celebrations, and outdoor play show the lasting difference
+                            made by years of steady work.</p>
+                        <span class="tl-tag">Now</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== PROGRAMS ===== -->
-  <section class="programs-section" id="programs">
-    <div class="container">
-      <div class="sec-header">
-        <div class="eyebrow-tag">What We Do</div>
-        <h2 class="section-h2">Programs Built<br><em>Around Every Child</em></h2>
-      </div>
-      <div class="programs-grid">
-        <div class="prog-card prog-featured">
-          <div class="prog-num">01</div>
-          <i class="fas fa-book-reader prog-icon"></i>
-          <h3>Remedial Education</h3>
-          <p>Specialized, personalized academic support that meets each child where they are and guides them to where they can be.</p>
-          <div class="prog-tag">Core Program</div>
+    <!-- ===== MISSION QUOTE ===== -->
+    <section class="mission-section">
+        <div class="mission-inner">
+            <img class="mission-logo" src="images/logo.jpeg" alt="Miyamba MREC logo" />
+            <blockquote>
+                "Learning Opportunity<br>for a <em>Lifelong Difference</em>"
+            </blockquote>
+            <cite>— Miyamba MREC Official Motto</cite>
+            <div class="mission-divider"></div>
+            <p>We thank all who contribute for supporting inclusive education in Cameroon. Together, we are giving every
+                child the foundation they deserve.</p>
         </div>
-        <div class="prog-card">
-          <div class="prog-num">02</div>
-          <i class="fas fa-hands-holding-child prog-icon"></i>
-          <h3>Inclusive Learning</h3>
-          <p>Children with special needs are fully integrated — not separated — with dedicated support staff in every classroom.</p>
-        </div>
-        <div class="prog-card">
-          <div class="prog-num">03</div>
-          <i class="fas fa-graduation-cap prog-icon"></i>
-          <h3>Nursery & Primary</h3>
-          <p>Full curriculum from nursery through primary, aligned to national and international educational standards.</p>
-        </div>
-        <div class="prog-card">
-          <div class="prog-num">04</div>
-          <i class="fas fa-bus prog-icon"></i>
-          <h3>Transportation</h3>
-          <p>We remove distance as a barrier. Safe, reliable transport ensures every enrolled child can attend school daily.</p>
-        </div>
-        <div class="prog-card">
-          <div class="prog-num">05</div>
-          <i class="fas fa-users prog-icon"></i>
-          <h3>Community Outreach</h3>
-          <p>We engage families and the Buea community to build a culture of lifelong learning beyond school walls.</p>
-        </div>
-        <div class="prog-card">
-          <div class="prog-num">06</div>
-          <i class="fas fa-globe-africa prog-icon"></i>
-          <h3>Volunteer Program</h3>
-          <p>Join our global network of educators and change-makers. Remote and on-site opportunities available year-round.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== IMPACT / STATS ===== -->
-  <section class="impact-section" id="impact">
-    <div class="impact-left">
-      <div class="eyebrow-tag light">Our Impact</div>
-      <h2 class="section-h2 light">Numbers That<br><em>Tell a Story</em></h2>
-      <p class="impact-sub">Since opening our doors in 2015, MARELI Academy has transformed hundreds of lives — and we're just getting started.</p>
-      <a href="https://www.miyamba.org/donate/" class="btn-light" target="_blank">Support Our Growth <i class="fas fa-arrow-right"></i></a>
-    </div>
-    <div class="impact-right">
-      <div class="impact-card" data-target="600">
-        <div class="ic-number"><span class="count" data-target="600">0</span><span class="ic-plus">+</span></div>
-        <div class="ic-label">Maximum student capacity</div>
-        <div class="ic-bar"><div class="ic-fill" style="width:100%"></div></div>
-      </div>
-      <div class="impact-card" data-target="35">
-        <div class="ic-number"><span class="count" data-target="35">0</span></div>
-        <div class="ic-label">Average class size</div>
-        <div class="ic-bar"><div class="ic-fill" style="width:60%"></div></div>
-      </div>
-      <div class="impact-card" data-target="20">
-        <div class="ic-number"><span class="count" data-target="20">0</span></div>
-        <div class="ic-label">Modern classrooms</div>
-        <div class="ic-bar"><div class="ic-fill" style="width:45%"></div></div>
-      </div>
-      <div class="impact-card" data-target="3">
-        <div class="ic-number"><span class="count" data-target="3">0</span></div>
-        <div class="ic-label">Story building on campus</div>
-        <div class="ic-bar"><div class="ic-fill" style="width:30%"></div></div>
-      </div>
-    </div>
-  </section>
+    <!-- ===== PROGRAMS ===== -->
+    <section class="programs-section" id="programs">
+        <div class="container">
+            <div class="sec-header">
+                <div class="eyebrow-tag">What We Do</div>
+                <h2 class="section-h2">Programs Built<br><em>Around Every Child</em></h2>
+            </div>
+            <div class="programs-grid">
+                <div class="prog-card prog-featured">
+                    <div class="prog-num">01</div>
+                    <i class="fas fa-book-reader prog-icon"></i>
+                    <h3>Remedial Education</h3>
+                    <p>Specialized, personalized academic support that meets each child where they are and guides them
+                        to where they can be.</p>
+                    <div class="prog-tag">Core Program</div>
+                </div>
+                <div class="prog-card">
+                    <div class="prog-num">02</div>
+                    <i class="fas fa-hands-holding-child prog-icon"></i>
+                    <h3>Inclusive Learning</h3>
+                    <p>Children with special needs are fully integrated — not separated — with dedicated support staff
+                        in every classroom.</p>
+                </div>
+                <div class="prog-card">
+                    <div class="prog-num">03</div>
+                    <i class="fas fa-graduation-cap prog-icon"></i>
+                    <h3>Nursery & Primary</h3>
+                    <p>Full curriculum from nursery through primary, aligned to national and international educational
+                        standards.</p>
+                </div>
+                <div class="prog-card">
+                    <div class="prog-num">04</div>
+                    <i class="fas fa-bus prog-icon"></i>
+                    <h3>Transportation</h3>
+                    <p>We remove distance as a barrier. Safe, reliable transport ensures every enrolled child can attend
+                        school daily.</p>
+                </div>
+                <div class="prog-card">
+                    <div class="prog-num">05</div>
+                    <i class="fas fa-users prog-icon"></i>
+                    <h3>Community Outreach</h3>
+                    <p>We engage families and the Buea community to build a culture of lifelong learning beyond school
+                        walls.</p>
+                </div>
+                <div class="prog-card">
+                    <div class="prog-num">06</div>
+                    <i class="fas fa-globe-africa prog-icon"></i>
+                    <h3>Volunteer Program</h3>
+                    <p>Join our global network of educators and change-makers. Remote and on-site opportunities
+                        available year-round.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== GALLERY ===== -->
-  <section class="gallery-section" id="gallery">
-    <div class="container">
-      <div class="sec-header">
-        <div class="eyebrow-tag">Life at MARELI</div>
-        <h2 class="section-h2">Moments That<br><em>Matter</em></h2>
-      </div>
-    </div>
-    <div class="gallery-masonry">
-      <div class="gm-item gm-tall" data-caption="Our School Building">
-        <img src="https://www.miyamba.org/wp-content/uploads/2017/10/miyamba-front-1.jpg" alt="School"/>
-        <div class="gm-overlay"><span>Our School</span></div>
-      </div>
-      <div class="gm-item" data-caption="Learning in Action">
-        <img src="https://www.miyamba.org/wp-content/uploads/2017/10/class-time-min-1.jpg" alt="Class"/>
-        <div class="gm-overlay"><span>Class Time</span></div>
-      </div>
-      <div class="gm-item" data-caption="Joy at Recess">
-        <img src="https://www.miyamba.org/wp-content/uploads/2017/10/recess.jpg" alt="Recess"/>
-        <div class="gm-overlay"><span>Play Time</span></div>
-      </div>
-      <div class="gm-item gm-wide" data-caption="Our Students">
-        <img src="https://www.miyamba.org/wp-content/uploads/2017/10/students1.jpg" alt="Students"/>
-        <div class="gm-overlay"><span>Our Students</span></div>
-      </div>
-      <div class="gm-item" data-caption="Graduation Day">
-        <img src="https://www.miyamba.org/wp-content/uploads/2017/10/image3.jpeg" alt="Graduation"/>
-        <div class="gm-overlay"><span>Graduation</span></div>
-      </div>
-      <div class="gm-item" data-caption="Dedicated Staff">
-        <img src="https://www.miyamba.org/wp-content/uploads/2017/10/staff2.jpg" alt="Staff"/>
-        <div class="gm-overlay"><span>Our Staff</span></div>
-      </div>
-    </div>
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-      <button class="lb-close" id="lbClose">×</button>
-      <button class="lb-nav lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
-      <div class="lb-img-wrap"><img id="lbImg" src="" alt=""/><p id="lbCaption"></p></div>
-      <button class="lb-nav lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
-    </div>
-  </section>
+    <!-- ===== IMPACT / STATS ===== -->
+    <section class="impact-section" id="impact">
+        <div class="impact-left">
+            <div class="eyebrow-tag light">Our Impact</div>
+            <h2 class="section-h2 light">Numbers That<br><em>Tell a Story</em></h2>
+            <p class="impact-sub">Since opening our doors in 2015, MARELI Academy has transformed hundreds of lives —
+                and we're just getting started.</p>
+            <a href="https://www.miyamba.org/donate/" class="btn-light" target="_blank">Support Our Growth <i
+                    class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="impact-right">
+            <div class="impact-card" data-target="600">
+                <div class="ic-number"><span class="count" data-target="600">0</span><span class="ic-plus">+</span>
+                </div>
+                <div class="ic-label">Maximum student capacity</div>
+                <div class="ic-bar">
+                    <div class="ic-fill" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="impact-card" data-target="35">
+                <div class="ic-number"><span class="count" data-target="35">0</span></div>
+                <div class="ic-label">Average class size</div>
+                <div class="ic-bar">
+                    <div class="ic-fill" style="width:60%"></div>
+                </div>
+            </div>
+            <div class="impact-card" data-target="20">
+                <div class="ic-number"><span class="count" data-target="20">0</span></div>
+                <div class="ic-label">Modern classrooms</div>
+                <div class="ic-bar">
+                    <div class="ic-fill" style="width:45%"></div>
+                </div>
+            </div>
+            <div class="impact-card" data-target="3">
+                <div class="ic-number"><span class="count" data-target="3">0</span></div>
+                <div class="ic-label">Story building on campus</div>
+                <div class="ic-bar">
+                    <div class="ic-fill" style="width:30%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== DONATE ===== -->
-  <section class="donate-section">
-    <div class="donate-image">
-      <img src="https://www.miyamba.org/wp-content/uploads/2017/10/roofing.jpg" alt="Construction progress"/>
-      <div class="donate-overlay"></div>
-    </div>
-    <div class="donate-content">
-      <div class="eyebrow-tag">Make a Difference</div>
-      <h2 class="section-h2">Your Gift Builds<br><em>Futures</em></h2>
-      <p>Your tax-deductible donation directly funds classroom construction, teacher salaries, student supplies, and transportation — turning possibility into reality for children in Buea.</p>
-      <div class="donate-tiers">
-        <div class="tier"><span class="tier-amt">$25</span><span class="tier-desc">Monthly student supplies</span></div>
-        <div class="tier"><span class="tier-amt">$100</span><span class="tier-desc">Teacher salary support</span></div>
-        <div class="tier tier-highlight"><span class="tier-amt">$500</span><span class="tier-desc">Furnish a full classroom</span></div>
-        <div class="tier"><span class="tier-amt">$1K+</span><span class="tier-desc">Sponsor a child's year</span></div>
-      </div>
-      <div class="donate-actions">
-        <a href="https://www.miyamba.org/donate/" class="btn-gold" target="_blank">Donate Now <i class="fas fa-heart"></i></a>
-        <a href="#contact" class="btn-outline-dark">Learn More</a>
-      </div>
-    </div>
-  </section>
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="sec-header">
+                <div class="eyebrow-tag">Life at MARELI</div>
+                <h2 class="section-h2">Moments That<br><em>Matter</em></h2>
+            </div>
+        </div>
+        <div class="gallery-masonry">
+            <div class="gm-item gm-tall" data-caption="MARELI Academy campus in Buea, recent view">
+                <img src="images/miyamba-front-1.jpg" alt="MARELI Academy school building" />
+                <div class="gm-overlay"><span>Campus Today</span></div>
+            </div>
+            <div class="gm-item" data-caption="Classroom learning at MARELI Academy">
+                <img src="images/class-time-min-1.jpg" alt="Children learning in class" />
+                <div class="gm-overlay"><span>Classroom Learning</span></div>
+            </div>
+            <div class="gm-item" data-caption="Students on the school grounds during outdoor time">
+                <img src="images/recess.jpg" alt="Students playing outdoors at recess" />
+                <div class="gm-overlay"><span>Outdoor Time</span></div>
+            </div>
+            <div class="gm-item gm-wide" data-caption="Students assembled in their school uniforms">
+                <img src="images/image20.jpeg" alt="Students gathered at MARELI Academy" />
+                <div class="gm-overlay"><span>Student Community</span></div>
+            </div>
+            <div class="gm-item" data-caption="Construction progress, July 2012">
+                <img src="images/start_of_second_floor_2012.jpg" alt="Second floor construction progress in 2012" />
+                <div class="gm-overlay"><span>July 2012</span></div>
+            </div>
+            <div class="gm-item" data-caption="Children learning through hands-on play">
+                <img src="images/image5.jpeg" alt="Young students learning around a classroom table" />
+                <div class="gm-overlay"><span>Early Learning</span></div>
+            </div>
+            <div class="gm-item" data-caption="Students in assembly on campus">
+                <img src="images/image10%20%281%29.jpeg" alt="Students lined up for assembly" />
+                <div class="gm-overlay"><span>Assembly</span></div>
+            </div>
+            <div class="gm-item gm-wide" data-caption="Graduation and celebration with families">
+                <img src="images/image3.jpeg" alt="Graduation celebration at MARELI Academy" />
+                <div class="gm-overlay"><span>Celebration</span></div>
+            </div>
+            <div class="gm-item" data-caption="Classroom assessment and focused study">
+                <img src="images/image1.jpeg" alt="Students writing in a classroom" />
+                <div class="gm-overlay"><span>Focused Study</span></div>
+            </div>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lb-close" id="lbClose">×</button>
+            <button class="lb-nav lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="lb-img-wrap"><img id="lbImg" src="" alt="" />
+                <p id="lbCaption"></p>
+            </div>
+            <button class="lb-nav lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
 
-  <!-- ===== GET INVOLVED ===== -->
-  <section class="involved-section">
-    <div class="container">
-      <div class="sec-header">
-        <div class="eyebrow-tag">Join the Movement</div>
-        <h2 class="section-h2">Be Part of<br><em>The Change</em></h2>
-      </div>
-      <div class="involved-row">
-        <div class="inv-card">
-          <div class="inv-icon"><i class="fas fa-hand-holding-heart"></i></div>
-          <div class="inv-num">01</div>
-          <h3>Volunteer</h3>
-          <p>Share your expertise with students and teachers. Remote mentoring or on-site teaching opportunities.</p>
-          <a href="https://www.miyamba.org/get-involved/" class="inv-link" target="_blank">Get Involved <i class="fas fa-arrow-right"></i></a>
+    <!-- ===== DONATE ===== -->
+    <section class="donate-section">
+        <div class="donate-image">
+            <img src="images/image5%20%281%29.jpeg" alt="Construction progress in July 2012" />
+            <div class="donate-overlay"></div>
+            <div class="donate-img-caption">Construction progress, July 2012</div>
         </div>
-        <div class="inv-card inv-card-dark">
-          <div class="inv-icon"><i class="fas fa-donate"></i></div>
-          <div class="inv-num">02</div>
-          <h3>Donate</h3>
-          <p>Every dollar goes directly to students. Transparent, impactful, and deeply appreciated.</p>
-          <a href="https://www.miyamba.org/donate/" class="inv-link" target="_blank">Give Now <i class="fas fa-arrow-right"></i></a>
+        <div class="donate-content">
+            <div class="eyebrow-tag">Make a Difference</div>
+            <h2 class="section-h2">Your Gift Builds<br><em>Futures</em></h2>
+            <p>Your tax-deductible donation directly funds classroom construction, teacher salaries, student supplies,
+                and transportation — turning possibility into reality for children in Buea.</p>
+            <div class="donate-tiers">
+                <div class="tier"><span class="tier-amt">$25</span><span class="tier-desc">Monthly student
+                        supplies</span></div>
+                <div class="tier"><span class="tier-amt">$100</span><span class="tier-desc">Teacher salary
+                        support</span></div>
+                <div class="tier tier-highlight"><span class="tier-amt">$500</span><span class="tier-desc">Furnish a
+                        full classroom</span></div>
+                <div class="tier"><span class="tier-amt">$1K+</span><span class="tier-desc">Sponsor a child's
+                        year</span></div>
+            </div>
+            <div class="donate-actions">
+                <a href="https://www.miyamba.org/donate/" class="btn-gold" target="_blank">Donate Now <i
+                        class="fas fa-heart"></i></a>
+                <a href="#contact" class="btn-outline-dark">Learn More</a>
+            </div>
         </div>
-        <div class="inv-card">
-          <div class="inv-icon"><i class="fas fa-share-nodes"></i></div>
-          <div class="inv-num">03</div>
-          <h3>Spread the Word</h3>
-          <p>Follow us on social media and share our story. Awareness changes lives too.</p>
-          <a href="#" class="inv-link">Share Our Story <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section class="contact-section" id="contact">
-    <div class="contact-info-col">
-      <div class="eyebrow-tag light">Say Hello</div>
-      <h2 class="section-h2 light">Let's Build the<br><em>Future Together</em></h2>
-      <p>Have questions, want to partner, or ready to get involved? Reach out — we respond personally.</p>
-      <ul class="contact-list">
-        <li><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><span>Buea, South West Region, Cameroon</span></div></li>
-        <li><i class="fas fa-envelope"></i><div><strong>Email</strong><span>info@miyamba.org</span></div></li>
-        <li><i class="fas fa-globe"></i><div><strong>Website</strong><span>www.miyamba.org</span></div></li>
-      </ul>
-      <div class="contact-socials">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="contact-form-col">
-      <form class="cform" id="cform" novalidate>
-        <div class="cform-row">
-          <div class="cform-field">
-            <label>First Name</label>
-            <input type="text" placeholder="e.g. William" required/>
-          </div>
-          <div class="cform-field">
-            <label>Last Name</label>
-            <input type="text" placeholder="e.g. Mbu" required/>
-          </div>
+    <!-- ===== GET INVOLVED ===== -->
+    <section class="involved-section">
+        <div class="container">
+            <div class="sec-header">
+                <div class="eyebrow-tag">Join the Movement</div>
+                <h2 class="section-h2">Be Part of<br><em>The Change</em></h2>
+            </div>
+            <div class="involved-row">
+                <div class="inv-card">
+                    <div class="inv-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <div class="inv-num">01</div>
+                    <h3>Volunteer</h3>
+                    <p>Share your expertise with students and teachers. Remote mentoring or on-site teaching
+                        opportunities.</p>
+                    <a href="https://www.miyamba.org/get-involved/" class="inv-link" target="_blank">Get Involved <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="inv-card inv-card-dark">
+                    <div class="inv-icon"><i class="fas fa-donate"></i></div>
+                    <div class="inv-num">02</div>
+                    <h3>Donate</h3>
+                    <p>Every dollar goes directly to students. Transparent, impactful, and deeply appreciated.</p>
+                    <a href="https://www.miyamba.org/donate/" class="inv-link" target="_blank">Give Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="inv-card">
+                    <div class="inv-icon"><i class="fas fa-share-nodes"></i></div>
+                    <div class="inv-num">03</div>
+                    <h3>Spread the Word</h3>
+                    <p>Follow us on social media and share our story. Awareness changes lives too.</p>
+                    <a href="#" class="inv-link">Share Our Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="cform-field">
-          <label>Email Address</label>
-          <input type="email" placeholder="your@email.com" required/>
-        </div>
-        <div class="cform-field">
-          <label>Subject</label>
-          <select>
-            <option value="">Select a topic</option>
-            <option>Enrollment Inquiry</option>
-            <option>Volunteer Opportunity</option>
-            <option>Donation / Partnership</option>
-            <option>General Question</option>
-          </select>
-        </div>
-        <div class="cform-field">
-          <label>Message</label>
-          <textarea rows="5" placeholder="Tell us how you'd like to connect..." required></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
-        <div class="cform-success" id="cformSuccess">
-          <i class="fas fa-circle-check"></i> Thank you! We'll be in touch within 48 hours.
-        </div>
-      </form>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div class="ft-brand">
-        <div class="ft-logo">
-          <span class="logo-mark sm">M</span>
-          <div>
-            <span class="ft-name">Miyamba</span>
-            <span class="ft-sub">MARELI Academy</span>
-          </div>
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-section" id="contact">
+        <div class="contact-info-col">
+            <div class="eyebrow-tag light">Say Hello</div>
+            <h2 class="section-h2 light">Let's Build the<br><em>Future Together</em></h2>
+            <p>Have questions, want to partner, or ready to get involved? Reach out — we respond personally.</p>
+            <ul class="contact-list">
+                <li><i class="fas fa-map-marker-alt"></i>
+                    <div><strong>Location</strong><span>Buea, South West Region, Cameroon</span></div>
+                </li>
+                <li><i class="fas fa-envelope"></i>
+                    <div><strong>Email</strong><span><a href="mailto:wmbu@miyamba.org">wmbu@miyamba.org</a></span>
+                    </div>
+                </li>
+                <li><i class="fas fa-globe"></i>
+                    <div><strong>Website</strong><span>www.miyamba.org</span></div>
+                </li>
+            </ul>
+            <div class="contact-socials">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-        <p>Providing inclusive, quality education to every child in Buea, Cameroon — since 2015.</p>
-        <div class="ft-socials">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="contact-form-col">
+            <form class="cform" id="cform" name="contact" method="POST" data-netlify="true" novalidate>
+                <input type="hidden" name="form-name" value="contact" />
+                <div class="cform-row">
+                    <div class="cform-field">
+                        <label>First Name</label>
+                        <input type="text" name="first-name" placeholder="e.g. William" required />
+                    </div>
+                    <div class="cform-field">
+                        <label>Last Name</label>
+                        <input type="text" name="last-name" placeholder="e.g. Mbu" required />
+                    </div>
+                </div>
+                <div class="cform-field">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="your@email.com" required />
+                </div>
+                <div class="cform-field">
+                    <label>Subject</label>
+                    <select name="subject">
+                        <option value="">Select a topic</option>
+                        <option>Enrollment Inquiry</option>
+                        <option>Volunteer Opportunity</option>
+                        <option>Donation / Partnership</option>
+                        <option>General Question</option>
+                    </select>
+                </div>
+                <div class="cform-field">
+                    <label>Message</label>
+                    <textarea rows="5" name="message" placeholder="Tell us how you'd like to connect..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                <div class="cform-success" id="cformSuccess">
+                    <i class="fas fa-circle-check"></i> Thank you! We'll be in touch within 48 hours.
+                </div>
+            </form>
         </div>
-      </div>
-      <div class="ft-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="#about">Our Story</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#impact">Impact</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="ft-col">
-        <h4>Get Involved</h4>
-        <ul>
-          <li><a href="https://www.miyamba.org/donate/" target="_blank">Donate</a></li>
-          <li><a href="https://www.miyamba.org/get-involved/" target="_blank">Volunteer</a></li>
-          <li><a href="https://www.miyamba.org/board-of-directors/" target="_blank">Board of Directors</a></li>
-          <li><a href="https://www.miyamba.org/f-a-q/" target="_blank">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="ft-col ft-newsletter">
-        <h4>Stay Updated</h4>
-        <p>Get our latest news and school updates directly in your inbox.</p>
-        <div class="ft-sub-form">
-          <input type="email" placeholder="your@email.com"/>
-          <button type="button">Subscribe</button>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2024 Miyamba / MARELI Academy · Buea, Cameroon</span>
-      <span>Designed with ❤ for the children of Cameroon</span>
-    </div>
-  </footer>
+    </section>
 
-  <a href="#home" class="btt" id="btt" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="ft-brand">
+                <div class="ft-logo">
+                    <img class="ft-logo-img" src="images/logo.jpeg" alt="Miyamba MREC logo" />
+                    <div>
+                        <span class="ft-name">Miyamba</span>
+                        <span class="ft-sub">MARELI Academy</span>
+                    </div>
+                </div>
+                <p>Providing inclusive, quality education to every child in Buea, Cameroon — since 2015.</p>
+                <div class="ft-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="ft-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="ft-col">
+                <h4>Get Involved</h4>
+                <ul>
+                    <li><a href="https://www.miyamba.org/donate/" target="_blank">Donate</a></li>
+                    <li><a href="https://www.miyamba.org/get-involved/" target="_blank">Volunteer</a></li>
+                    <li><a href="https://www.miyamba.org/board-of-directors/" target="_blank">Board of Directors</a>
+                    </li>
+                    <li><a href="https://www.miyamba.org/f-a-q/" target="_blank">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="ft-col ft-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Get our latest news and school updates directly in your inbox.</p>
+                <div class="ft-sub-form">
+                    <input type="email" placeholder="your@email.com" />
+                    <button type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Miyamba / MARELI Academy · Buea, Cameroon</span>
+            <span>Designed with care for the children of Cameroon</span>
+        </div>
+    </footer>
 
-  <script src="js/main.js"></script>
+    <a href="#home" class="btt" id="btt" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
